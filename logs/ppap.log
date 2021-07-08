@@ -1,0 +1,1277 @@
+email=mizuttsu@hotmail.com
+----importvm.sh start----
+2017/29/02/20/17/15:29:10
+Windows7.Pro.64bit.SP1 Windows7Professional64bitSP1noCustom.176 176 2048 mizuttsu@hotmail.com
+VBoxManage import /home/vboxuser/ppap/master/Windows7.Pro.64bit.SP1.ova --vsys 0 --vmname Windows7.Pro.64bit.SP1.176
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows7.Pro.64bit.SP1.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Disks:
+  vmdisk1	1099511627776	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows7_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows7.Pro.64bit.SP1.176"
+ 2: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 3: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 4: USB controller
+    (disable with "--vsys 0 --unit 4 --ignore")
+ 5: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 6: CD-ROM
+    (disable with "--vsys 0 --unit 6 --ignore")
+ 7: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: Hard disk image: source image=Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.master_1/Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk, controller=7;channel=0
+    (change target path with "--vsys 0 --unit 8 --disk path";
+    disable with "--vsys 0 --unit 8 --ignore")
+Successfully imported the appliance.
+Name:            Windows7.Pro.64bit.SP1.176
+Groups:          /
+Guest OS:        Windows 7 (64-bit)
+UUID:            8b8db5bb-d217-45a5-942f-4aa8242ffed9
+Config file:     /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Windows7.Pro.64bit.SP1.176.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Logs
+Hardware UUID:   8b8db5bb-d217-45a5-942f-4aa8242ffed9
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       21MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       on
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-16T06:22:23.000000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (0, 0): /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.master_1/Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk (UUID: 796679c9-5579-47f3-a1df-698d0be37c2b)
+SATA (1, 0): /home/archive/installer/iso/mu_windows_7_sp1_x86_x64_dvd_619642.iso (UUID: 254f6ee2-f6fa-424a-b4a4-c0ed530dd124)
+NIC 1:           MAC: 0800276F4AB7, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            disabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Windows7.Pro.64bit.SP1.176.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=176+1
+177
+VBoxManage modifyvm "Windows7.Pro.64bit.SP1.176"   --macaddress1 "08002780F176"   --memory 2048   --description mizuttsu@hotmail.com/2017/29/02/20/17/15:29:10  
+Waiting for VM "Windows7.Pro.64bit.SP1.176" to power on...
+VM "Windows7.Pro.64bit.SP1.176" has been successfully started.
+2017/29/02/20/17/15:29:10
+----importvm.sh done.----
+email=tmizutani@gmail.com
+----importvm.sh start----
+2017/26/02/20/17/18:26:20
+Windows10.Pro.64bit.noSP Windows10Professional64bitnoSPnone.176 176 2048 tmizutani@gmail.com
+VBoxManage import /home/vboxuser/ppap/master/Windows10.Pro.64bit.noSP.ova --vsys 0 --vmname Windows10.Pro.64bit.noSP.176
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows10.Pro.64bit.noSP.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Disks:
+  vmdisk1	1099511627776	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows10_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows10.Pro.64bit.noSP.176"
+ 2: Description "master.2017/2/16/19:00"
+    (change with "--vsys 0 --description <desc>")
+ 3: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 4: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 5: USB controller
+    (disable with "--vsys 0 --unit 5 --ignore")
+ 6: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 7: CD-ROM
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 8 --ignore")
+ 9: Hard disk image: source image=Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.master_1/Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk, controller=8;channel=0
+    (change target path with "--vsys 0 --unit 9 --disk path";
+    disable with "--vsys 0 --unit 9 --ignore")
+Successfully imported the appliance.
+Name:            Windows10.Pro.64bit.noSP.176
+Groups:          /
+Guest OS:        Windows 10 (64-bit)
+UUID:            04ddccd1-73f3-4961-a5f5-811d745af850
+Config file:     /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Windows10.Pro.64bit.noSP.176.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Logs
+Hardware UUID:   04ddccd1-73f3-4961-a5f5-811d745af850
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       128MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       on
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-17T01:42:51.000000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (0, 0): /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.master_1/Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk (UUID: 1168da9a-35fc-4d14-a0db-733eb986ff0c)
+SATA (1, 0): /root/.config/VirtualBox/VBoxGuestAdditions_5.0.32.iso (UUID: ea2b78cd-2b0f-4518-8174-399fe7ed7bbb)
+NIC 1:           MAC: 0800278218D6, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            enabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Windows10.Pro.64bit.noSP.176.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Description:
+master.2017/2/16/19:00
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=176+1
+177
+VBoxManage modifyvm "Windows10.Pro.64bit.noSP.176"   --macaddress1 "08002780F176"   --memory 2048   --description tmizutani@gmail.com/2017/26/02/20/17/18:26:20  
+Waiting for VM "Windows10.Pro.64bit.noSP.176" to power on...
+VM "Windows10.Pro.64bit.noSP.176" has been successfully started.
+2017/26/02/20/17/18:26:20
+----importvm.sh done.----
+email=mizuttsu@hotmail.com
+----importvm.sh start----
+2017/53/02/20/17/18:53:22
+Windows7.Pro.64bit.SP1 Windows7Professional64bitSP1noCustom.176 176 2048 mizuttsu@hotmail.com
+VBoxManage import /home/vboxuser/ppap/master/Windows7.Pro.64bit.SP1.ova --vsys 0 --vmname Windows7.Pro.64bit.SP1.176
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows7.Pro.64bit.SP1.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Disks:
+  vmdisk1	1099511627776	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows7_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows7.Pro.64bit.SP1.176"
+ 2: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 3: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 4: USB controller
+    (disable with "--vsys 0 --unit 4 --ignore")
+ 5: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 6: CD-ROM
+    (disable with "--vsys 0 --unit 6 --ignore")
+ 7: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: Hard disk image: source image=Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.master_1/Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk, controller=7;channel=0
+    (change target path with "--vsys 0 --unit 8 --disk path";
+    disable with "--vsys 0 --unit 8 --ignore")
+Successfully imported the appliance.
+Name:            Windows7.Pro.64bit.SP1.176
+Groups:          /
+Guest OS:        Windows 7 (64-bit)
+UUID:            b67bfda7-ec67-402d-bb23-779c305e0b3c
+Config file:     /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Windows7.Pro.64bit.SP1.176.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Logs
+Hardware UUID:   b67bfda7-ec67-402d-bb23-779c305e0b3c
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       21MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       on
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-16T06:22:23.000000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (0, 0): /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.master_1/Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk (UUID: 86a9a487-7e39-42d7-9d2b-62f7ca057b47)
+SATA (1, 0): /home/archive/installer/iso/mu_windows_7_sp1_x86_x64_dvd_619642.iso (UUID: 254f6ee2-f6fa-424a-b4a4-c0ed530dd124)
+NIC 1:           MAC: 080027A0E919, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            disabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Windows7.Pro.64bit.SP1.176.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=176+1
+177
+VBoxManage modifyvm "Windows7.Pro.64bit.SP1.176"   --macaddress1 "08002780F176"   --memory 2048   --description mizuttsu@hotmail.com/2017/53/02/20/17/18:53:22  
+Waiting for VM "Windows7.Pro.64bit.SP1.176" to power on...
+VM "Windows7.Pro.64bit.SP1.176" has been successfully started.
+2017/53/02/20/17/18:53:22
+----importvm.sh done.----
+email=mizuttsu@hotmail.com
+----importvm.sh start----
+2017/04/02/20/17/19:04:59
+Windows10.Pro.64bit.noSP Windows10Professional64bitnoSPnone.176 176 2048 mizuttsu@hotmail.com
+VBoxManage import /home/vboxuser/ppap/master/Windows10.Pro.64bit.noSP.ova --vsys 0 --vmname Windows10.Pro.64bit.noSP.176
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows10.Pro.64bit.noSP.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...
+Progress state: VBOX_E_FILE_ERROR
+VBoxManage: error: Appliance import failed
+VBoxManage: error: Machine settings file '/home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Windows10.Pro.64bit.noSP.176.vbox' already exists
+VBoxManage: error: Details: code VBOX_E_FILE_ERROR (0x80bb0004), component MachineWrap, interface IMachine
+VBoxManage: error: Context: "RTEXITCODE handleImportAppliance(HandlerArg*)" at line 877 of file VBoxManageAppliance.cpp
+Disks:
+  vmdisk1	1099511627776	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows10_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows10.Pro.64bit.noSP.176"
+ 2: Description "master.2017/2/16/19:00"
+    (change with "--vsys 0 --description <desc>")
+ 3: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 4: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 5: USB controller
+    (disable with "--vsys 0 --unit 5 --ignore")
+ 6: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 7: CD-ROM
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 8 --ignore")
+ 9: Hard disk image: source image=Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.master_1/Windows10.Pro.64bit.noSP.master.201702171043-disk1_1.vmdk, controller=8;channel=0
+    (change target path with "--vsys 0 --unit 9 --disk path";
+    disable with "--vsys 0 --unit 9 --ignore")
+Name:            Windows10.Pro.64bit.noSP.176
+Groups:          /
+Guest OS:        Windows 10 (64-bit)
+UUID:            04ddccd1-73f3-4961-a5f5-811d745af850
+Config file:     /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Windows10.Pro.64bit.noSP.176.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Logs
+Hardware UUID:   04ddccd1-73f3-4961-a5f5-811d745af850
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       128MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       on
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-20T10:04:31.677000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (0, 0): /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.master_1/Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk (UUID: 1168da9a-35fc-4d14-a0db-733eb986ff0c)
+SATA (1, 0): /root/.config/VirtualBox/VBoxGuestAdditions_5.0.32.iso (UUID: ea2b78cd-2b0f-4518-8174-399fe7ed7bbb)
+NIC 1:           MAC: 08002780F176, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            enabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.176/Windows10.Pro.64bit.noSP.176.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Description:
+tmizutani@gmail.com/2017/26/02/20/17/18:26:20
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=176+1
+177
+VBoxManage modifyvm "Windows10.Pro.64bit.noSP.176"   --macaddress1 "08002780F176"   --memory 2048   --description mizuttsu@hotmail.com/2017/04/02/20/17/19:04:59  
+Waiting for VM "Windows10.Pro.64bit.noSP.176" to power on...
+VM "Windows10.Pro.64bit.noSP.176" has been successfully started.
+2017/04/02/20/17/19:04:59
+----importvm.sh done.----
+email=mmm
+----importvm.sh start----
+2017/12/02/20/17/19:12:38
+Windows7.Pro.64bit.SP1 Windows7Professional64bitSP1noCustom.176 176 2048 mmm
+VBoxManage import /home/vboxuser/ppap/master/Windows7.Pro.64bit.SP1.ova --vsys 0 --vmname Windows7.Pro.64bit.SP1.176
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows7.Pro.64bit.SP1.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Disks:
+  vmdisk1	1099511627776	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows7_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows7.Pro.64bit.SP1.176"
+ 2: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 3: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 4: USB controller
+    (disable with "--vsys 0 --unit 4 --ignore")
+ 5: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 6: CD-ROM
+    (disable with "--vsys 0 --unit 6 --ignore")
+ 7: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: Hard disk image: source image=Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.master_1/Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk, controller=7;channel=0
+    (change target path with "--vsys 0 --unit 8 --disk path";
+    disable with "--vsys 0 --unit 8 --ignore")
+Successfully imported the appliance.
+Name:            Windows7.Pro.64bit.SP1.176
+Groups:          /
+Guest OS:        Windows 7 (64-bit)
+UUID:            81fe82ad-0e82-4c12-b915-c1cac841a2de
+Config file:     /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Windows7.Pro.64bit.SP1.176.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Logs
+Hardware UUID:   81fe82ad-0e82-4c12-b915-c1cac841a2de
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       21MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       on
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-16T06:22:23.000000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (0, 0): /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.master_1/Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk (UUID: 33794131-2680-4887-b0c6-6fb4e753e321)
+SATA (1, 0): /home/archive/installer/iso/mu_windows_7_sp1_x86_x64_dvd_619642.iso (UUID: 254f6ee2-f6fa-424a-b4a4-c0ed530dd124)
+NIC 1:           MAC: 08002729BE72, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            disabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.176/Windows7.Pro.64bit.SP1.176.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=176+1
+177
+VBoxManage modifyvm "Windows7.Pro.64bit.SP1.176"   --macaddress1 "08002780F176"   --memory 2048   --description mmm/2017/12/02/20/17/19:12:38  
+Waiting for VM "Windows7.Pro.64bit.SP1.176" to power on...
+VM "Windows7.Pro.64bit.SP1.176" has been successfully started.
+2017/12/02/20/17/19:12:38
+----importvm.sh done.----
+email=nnn
+----importvm.sh start----
+2017/22/02/20/17/19:22:38
+Windows10.Pro.64bit.noSP Windows10Professional64bitnoSPnone.177 177 2048 nnn
+VBoxManage import /home/vboxuser/ppap/master/Windows10.Pro.64bit.noSP.ova --vsys 0 --vmname Windows10.Pro.64bit.noSP.177
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows10.Pro.64bit.noSP.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Disks:
+  vmdisk1	1099511627776	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows10_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows10.Pro.64bit.noSP.177"
+ 2: Description "master.2017/2/16/19:00"
+    (change with "--vsys 0 --description <desc>")
+ 3: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 4: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 5: USB controller
+    (disable with "--vsys 0 --unit 5 --ignore")
+ 6: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 7: CD-ROM
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 8 --ignore")
+ 9: Hard disk image: source image=Windows10.Pro.64bit.noSP.master.201702171043-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.master_1/Windows10.Pro.64bit.noSP.master.201702171043-disk1_2.vmdk, controller=8;channel=0
+    (change target path with "--vsys 0 --unit 9 --disk path";
+    disable with "--vsys 0 --unit 9 --ignore")
+Successfully imported the appliance.
+Name:            Windows10.Pro.64bit.noSP.177
+Groups:          /
+Guest OS:        Windows 10 (64-bit)
+UUID:            a54c8adb-723f-4bfc-add9-f0549940cba6
+Config file:     /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.177/Windows10.Pro.64bit.noSP.177.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.177/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.177/Logs
+Hardware UUID:   a54c8adb-723f-4bfc-add9-f0549940cba6
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       128MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       on
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-17T01:42:51.000000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (0, 0): /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.master_1/Windows10.Pro.64bit.noSP.master.201702171043-disk1_2.vmdk (UUID: 35b3c045-d99a-4657-9bcf-e1e03718c3c6)
+SATA (1, 0): /root/.config/VirtualBox/VBoxGuestAdditions_5.0.32.iso (UUID: ea2b78cd-2b0f-4518-8174-399fe7ed7bbb)
+NIC 1:           MAC: 0800273E7BA7, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            enabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows10.Pro.64bit.noSP.177/Windows10.Pro.64bit.noSP.177.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Description:
+master.2017/2/16/19:00
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=177+1
+178
+VBoxManage modifyvm "Windows10.Pro.64bit.noSP.177"   --macaddress1 "08002780F177"   --memory 2048   --description nnn/2017/22/02/20/17/19:22:38  
+Waiting for VM "Windows10.Pro.64bit.noSP.177" to power on...
+VM "Windows10.Pro.64bit.noSP.177" has been successfully started.
+2017/22/02/20/17/19:22:38
+----importvm.sh done.----
+email=kkk
+----importvm.sh start----
+2017/26/02/20/17/19:26:36
+Windows7.Pro.32bit.SP1 Windows7Professional32bitSP1noCustom.178 178 2048 kkk
+VBoxManage import /home/vboxuser/ppap/master/Windows7.Pro.32bit.SP1.ova --vsys 0 --vmname Windows7.Pro.32bit.SP1.178
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows7.Pro.32bit.SP1.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Disks:
+  vmdisk1	107374182400	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows7.Pro.32bit.SP1.2017021248-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows7"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows7.Pro.32bit.SP1.178"
+ 2: Description "master.02161200"
+    (change with "--vsys 0 --description <desc>")
+ 3: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 4: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 5: USB controller
+    (disable with "--vsys 0 --unit 5 --ignore")
+ 6: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 7: CD-ROM
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: IDE controller, type PIIX4
+    (disable with "--vsys 0 --unit 8 --ignore")
+ 9: IDE controller, type PIIX4
+    (disable with "--vsys 0 --unit 9 --ignore")
+10: Hard disk image: source image=Windows7.Pro.32bit.SP1.2017021248-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows7.Pro.32bit.SP1.master_1/Windows7.Pro.32bit.SP1.2017021248-disk1.vmdk, controller=8;channel=0
+    (change target path with "--vsys 0 --unit 10 --disk path";
+    disable with "--vsys 0 --unit 10 --ignore")
+Successfully imported the appliance.
+Name:            Windows7.Pro.32bit.SP1.178
+Groups:          /New group
+Guest OS:        Windows 7 (32-bit)
+UUID:            52d63128-b41c-42c9-86db-80bc2f5342f2
+Config file:     /home/vboxuser/VirtualBox VMs/Windows7.Pro.32bit.SP1.178/Windows7.Pro.32bit.SP1.178.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows7.Pro.32bit.SP1.178/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows7.Pro.32bit.SP1.178/Logs
+Hardware UUID:   52d63128-b41c-42c9-86db-80bc2f5342f2
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       32MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       off
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          off
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-16T03:47:19.000000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            IDE
+Storage Controller Type (0):            PIIX4
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  2
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+IDE (0, 0): /home/vboxuser/VirtualBox VMs/Windows7.Pro.32bit.SP1.master_1/Windows7.Pro.32bit.SP1.2017021248-disk1.vmdk (UUID: ff8856a9-14d1-4c38-becb-62ea0ca58ec6)
+IDE (1, 0): Empty
+NIC 1:           MAC: 080027ECAA62, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            disabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows7.Pro.32bit.SP1.178/Windows7.Pro.32bit.SP1.178.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Description:
+master.02161200
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=178+1
+179
+VBoxManage modifyvm "Windows7.Pro.32bit.SP1.178"   --macaddress1 "08002780F178"   --memory 2048   --description kkk/2017/26/02/20/17/19:26:36  
+Waiting for VM "Windows7.Pro.32bit.SP1.178" to power on...
+VM "Windows7.Pro.32bit.SP1.178" has been successfully started.
+2017/26/02/20/17/19:26:36
+----importvm.sh done.----
+email=lll
+----importvm.sh start----
+2017/34/02/20/17/19:34:05
+Windows7.Pro.64bit.SP1 Windows7Professional64bitSP1noCustom.179 179 2048 lll
+VBoxManage import /home/vboxuser/ppap/master/Windows7.Pro.64bit.SP1.ova --vsys 0 --vmname Windows7.Pro.64bit.SP1.179
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows7.Pro.64bit.SP1.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Disks:
+  vmdisk1	1099511627776	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows7_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows7.Pro.64bit.SP1.179"
+ 2: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 3: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 4: USB controller
+    (disable with "--vsys 0 --unit 4 --ignore")
+ 5: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 6: CD-ROM
+    (disable with "--vsys 0 --unit 6 --ignore")
+ 7: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: Hard disk image: source image=Windows7.Pro.64bit.SP1.201702161523-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.master_1/Windows7.Pro.64bit.SP1.201702161523-disk1_1.vmdk, controller=7;channel=0
+    (change target path with "--vsys 0 --unit 8 --disk path";
+    disable with "--vsys 0 --unit 8 --ignore")
+Successfully imported the appliance.
+Name:            Windows7.Pro.64bit.SP1.179
+Groups:          /
+Guest OS:        Windows 7 (64-bit)
+UUID:            54909fa8-9b5f-4fa9-8559-4e67d5a5d06f
+Config file:     /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.179/Windows7.Pro.64bit.SP1.179.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.179/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.179/Logs
+Hardware UUID:   54909fa8-9b5f-4fa9-8559-4e67d5a5d06f
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       21MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       on
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-16T06:22:23.000000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (0, 0): /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.master_1/Windows7.Pro.64bit.SP1.201702161523-disk1_1.vmdk (UUID: 3a4b09e2-131a-4199-a528-c2648ef45b2d)
+SATA (1, 0): /home/archive/installer/iso/mu_windows_7_sp1_x86_x64_dvd_619642.iso (UUID: 254f6ee2-f6fa-424a-b4a4-c0ed530dd124)
+NIC 1:           MAC: 080027D580CB, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            disabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows7.Pro.64bit.SP1.179/Windows7.Pro.64bit.SP1.179.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=179+1
+180
+VBoxManage modifyvm "Windows7.Pro.64bit.SP1.179"   --macaddress1 "08002780F179"   --memory 2048   --description lll/2017/34/02/20/17/19:34:05  
+Waiting for VM "Windows7.Pro.64bit.SP1.179" to power on...
+VM "Windows7.Pro.64bit.SP1.179" has been successfully started.
+2017/34/02/20/17/19:34:05
+----importvm.sh done.----
+email=jjj
+----importvm.sh start----
+2017/42/02/20/17/19:42:51
+Windows81.Pro.64bit.noSP Windows8.1Professional64bitnoSPnone.180 180 2048 jjj
+VBoxManage import /home/vboxuser/ppap/master/Windows81.Pro.64bit.noSP.ova --vsys 0 --vmname Windows81.Pro.64bit.noSP.180
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Interpreting /home/vboxuser/ppap/master/Windows81.Pro.64bit.noSP.ova...
+OK.
+0%...10%...20%...30%...40%...50%...60%...70%...80%...90%...100%
+Disks:
+  vmdisk1	1099511627776	-1	http://www.vmware.com/interfaces/specifications/vmdk.html#streamOptimized	Windows81.Pro.64bit.noSP.master.201702172328-disk1.vmdk	-1	-1	
+
+Virtual system 0:
+ 0: Suggested OS type: "Windows81_64"
+    (change with "--vsys 0 --ostype <type>"; use "list ostypes" to list all possible values)
+ 1: VM name specified with --vmname: "Windows81.Pro.64bit.noSP.180"
+ 2: Description "master.2017/02/17/12:35"
+    (change with "--vsys 0 --description <desc>")
+ 3: Number of CPUs: 1
+    (change with "--vsys 0 --cpus <n>")
+ 4: Guest memory: 2048 MB
+    (change with "--vsys 0 --memory <MB>")
+ 5: USB controller
+    (disable with "--vsys 0 --unit 5 --ignore")
+ 6: Network adapter: orig Bridged, config 3, extra slot=0;type=Bridged
+ 7: CD-ROM
+    (disable with "--vsys 0 --unit 7 --ignore")
+ 8: SATA controller, type AHCI
+    (disable with "--vsys 0 --unit 8 --ignore")
+ 9: Hard disk image: source image=Windows81.Pro.64bit.noSP.master.201702172328-disk1.vmdk, target path=/home/vboxuser/VirtualBox VMs/Windows81.Pro.64bit.noSP.master_1/Windows81.Pro.64bit.noSP.master.201702172328-disk1.vmdk, controller=8;channel=0
+    (change target path with "--vsys 0 --unit 9 --disk path";
+    disable with "--vsys 0 --unit 9 --ignore")
+Successfully imported the appliance.
+Name:            Windows81.Pro.64bit.noSP.180
+Groups:          /
+Guest OS:        Windows 8.1 (64-bit)
+UUID:            482bca42-6c64-4ff5-8790-527fc95e1682
+Config file:     /home/vboxuser/VirtualBox VMs/Windows81.Pro.64bit.noSP.180/Windows81.Pro.64bit.noSP.180.vbox
+Snapshot folder: /home/vboxuser/VirtualBox VMs/Windows81.Pro.64bit.noSP.180/Snapshots
+Log folder:      /home/vboxuser/VirtualBox VMs/Windows81.Pro.64bit.noSP.180/Logs
+Hardware UUID:   482bca42-6c64-4ff5-8790-527fc95e1682
+Memory size:     2048MB
+Page Fusion:     off
+VRAM size:       128MB
+CPU exec cap:    100%
+HPET:            off
+Chipset:         piix3
+Firmware:        BIOS
+Number of CPUs:  1
+PAE:             off
+Long Mode:       on
+CPUID Portability Level: 0
+CPUID overrides: None
+Boot menu mode:  message and menu
+Boot Device (1): Floppy
+Boot Device (2): DVD
+Boot Device (3): HardDisk
+Boot Device (4): Not Assigned
+ACPI:            on
+IOAPIC:          on
+Time offset:     0ms
+RTC:             local time
+Hardw. virt.ext: on
+Nested Paging:   on
+Large Pages:     off
+VT-x VPID:       on
+VT-x unr. exec.: on
+Paravirt. Provider: Default
+State:           powered off (since 2017-02-17T14:27:40.000000000)
+Monitor count:   1
+3D Acceleration: off
+2D Video Acceleration: off
+Teleporter Enabled: off
+Teleporter Port: 0
+Teleporter Address: 
+Teleporter Password: 
+Tracing Enabled: off
+Allow Tracing to Access VM: off
+Tracing Configuration: 
+Autostart Enabled: off
+Autostart Delay: 0
+Default Frontend: 
+Storage Controller Name (0):            SATA
+Storage Controller Type (0):            IntelAhci
+Storage Controller Instance Number (0): 0
+Storage Controller Max Port Count (0):  30
+Storage Controller Port Count (0):      2
+Storage Controller Bootable (0):        on
+SATA (0, 0): /home/vboxuser/VirtualBox VMs/Windows81.Pro.64bit.noSP.master_1/Windows81.Pro.64bit.noSP.master.201702172328-disk1.vmdk (UUID: adc39fa0-9bec-4070-a945-2a0ca9b750a8)
+SATA (1, 0): /root/.config/VirtualBox/VBoxGuestAdditions_5.0.32.iso (UUID: ea2b78cd-2b0f-4518-8174-399fe7ed7bbb)
+NIC 1:           MAC: 0800274C0CA7, Attachment: Bridged Interface 'enp0s25', Cable connected: on, Trace: off (file: none), Type: 82540EM, Reported speed: 0 Mbps, Boot priority: 0, Promisc Policy: deny, Bandwidth group: none
+NIC 2:           disabled
+NIC 3:           disabled
+NIC 4:           disabled
+NIC 5:           disabled
+NIC 6:           disabled
+NIC 7:           disabled
+NIC 8:           disabled
+Pointing Device: USB Tablet
+Keyboard Device: PS/2 Keyboard
+UART 1:          disabled
+UART 2:          disabled
+UART 3:          disabled
+UART 4:          disabled
+LPT 1:           disabled
+LPT 2:           disabled
+Audio:           disabled
+Clipboard Mode:  Bidirectional
+Drag and drop Mode: Bidirectional
+VRDE:            disabled
+USB:             enabled
+EHCI:            enabled
+XHCI:            disabled
+
+USB Device Filters:
+
+<none>
+
+Bandwidth groups:  <none>
+
+Shared folders:  <none>
+
+Video capturing:    not active
+Capture screens:    0
+Capture file:       /home/vboxuser/VirtualBox VMs/Windows81.Pro.64bit.noSP.180/Windows81.Pro.64bit.noSP.180.webm
+Capture dimensions: 1024x768
+Capture rate:       512 kbps
+Capture FPS:        25
+
+Description:
+master.2017/02/17/12:35
+Guest:
+
+Configured memory balloon size:      0 MB
+
+
+increase nextIP=180+1
+181
+VBoxManage modifyvm "Windows81.Pro.64bit.noSP.180"   --macaddress1 "08002780F180"   --memory 2048   --description jjj/2017/42/02/20/17/19:42:51  
+Waiting for VM "Windows81.Pro.64bit.noSP.180" to power on...
+VM "Windows81.Pro.64bit.noSP.180" has been successfully started.
+2017/42/02/20/17/19:42:51
+----importvm.sh done.----

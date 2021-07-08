@@ -1,0 +1,14 @@
+#! /usr/bin/perl
+print "Content-type: text/html\n\n";
+print "Start VirtualBox instance...<br />";
+print "<html>";
+print "<head>";
+print "<meta http-equiv=\"Content-Type\" content~\"text/html;charset=EUC-JP\">";
+my $str = << "EOF";
+<a href="importvmlist.cgi">select master and Create VM</a><br />
+<a href="startvmlist.cgi">select and START VM</a><br />
+<a href="stopvmlist.cgi">select and STOP VM</a><br />
+<a href="destroyvmlist.cgi">select and DESTROY VM</a><br />
+EOF
+
+print "$str";
